@@ -6,6 +6,8 @@
     <title>Gostoso Paradise</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="shortcut icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="scripts/slider.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,18 +17,22 @@
                 <a id="text" href="index.html">Gostoso Paradise</a>
             </div>
             <ul id="menu">
-                <li><a href="#">Eventos</a></li>
-                <li><a href="#">Culinária</a></li>
-                <li><a href="#">Passeios</a></li>
-                <li><a href="#">Localidades</a></li>
+                <li id="current"><a href="eventos.html">Eventos</a></li>
+                <li><a href="culinaria.html">Culinária</a></li>
+                <li><a href="passeios.html">Passeios</a></li>
+                <li><a href="localidades.html">Localidades</a></li>
             </ul>
         </nav>
     </header>
     <div class="inicio">
-        <p>Bem vindo a</p>
-        <h1>SÃO MIGUEL DO GOSTOSO</h1>
+        <img src="images/img-holder.jpg" alt="Background Image" class="background-image">
+        <div class="overlay">
+            <h2>Bem vindo a</h2>
+            <h2>SÃO MIGUEL DO GOSTOSO</h2>
+        </div>
     </div>
     <div class="container">
+        <h1>O que esperar</h1>
         <p>Bem-vindo a São Miguel do Gostoso, um tesouro escondido no litoral do Rio Grande
             do Norte, Brasil. Aninhada entre dunas imponentes e o azul cristalino do Oceano 
             Atlântico, esta encantadora cidade costeira é um refúgio para aqueles que buscam
@@ -58,7 +64,7 @@
     </div>
     <div class="guia">
         <h1>GUIA DO TURISTA</h1>
-        <p>Planeje e desfrute</p>
+        <p class="sub">Planeje e desfrute</p>
         <div class="cards">
             <div class="card">
                 <img src="images/card1.png" alt="">
@@ -85,23 +91,37 @@
                 <img src="images/card4.jpg" alt="">
                 <div class="info">
                     <p>Como chegar</p>
-                    <a href="#">Saiba como chegar</a>
+                    <a href="#">Encontre</a>
                 </div>
             </div>
         </div>
-    </div>    
+    </div> 
+    <div class="wrapper">
+        <h1>GALERIA</h1>
+        <p class="sub">Descubra</p>
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel">
+            <img src="images/slider/img1.jpeg" alt="img" draggable="false">
+            <img src="images/slider/img2.jpeg" alt="img" draggable="false">
+            <img src="images/slider/img3.jpg" alt="img" draggable="false">
+            <img src="images/slider/img4.jpg" alt="img" draggable="false">
+            <img src="images/slider/img5.jpg" alt="img" draggable="false">
+            <img src="images/slider/img6.jpg" alt="img" draggable="false">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+
     <footer>
         <div id="logo">
             <img id="img-logo" src="images/logo.png" alt="">
             <a id="text" href="index.html">Gostoso Paradise</a>
         </div>
-        <h1>Fale Conosco</h1>
+        <h2>Fale Conosco</h2>
         <ul>
             <li><a href="#">Contato</a></li>
             <li><a href="#">Telefone</a></li>
             <li><a href="#">Whatssap</a></li>
         </ul>
     </footer>
-    
 </body>
 </html>
